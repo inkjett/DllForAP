@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--файл конфигурации. Время создания: 17:31:09 06.04.2020, пользователь - Galyamov, компьютер - ALPHAMAIN -->
+<Configuration Id="ba93f2bc-0b65-4447-81e3-13444740f6c5" Format="1">
+  <Signals>
+    <Properties>
+      <Property Id="999000" Type="String" Value="" />
+    </Properties>
+    <Items>
+      <Item Name="root" Type="Folder" Id="101">
+        <Properties />
+        <Items>
+          <Item Name="ValueIn" Type="Bool" Id="104" Value="True" Quality="216">
+            <Properties>
+              <Property Id="777005" Type="String" Value="{ Id=(0) Name=(AP2) DllFunctionName=(AP) LibraryName=(Dll1.dll) }" />
+              <Property Id="777006" Type="String" Value="{&quot;0&quot;:{&quot;CallingConvention&quot;:&quot;1&quot;,&quot;Charset&quot;:&quot;0&quot;,&quot;Return&quot;:{&quot;TypeDescriptor&quot;:{&quot;TypeCode&quot;:&quot;5&quot;,&quot;TypeMarshalOptions&quot;:{&quot;StringMarshalOptions&quot;:{&quot;StringMarshalKind&quot;:&quot;0&quot;}}}},&quot;Parameters&quot;:[{&quot;TypeDescriptor&quot;:{&quot;TypeCode&quot;:&quot;5&quot;,&quot;TypeMarshalOptions&quot;:{&quot;StringMarshalOptions&quot;:{&quot;StringMarshalKind&quot;:&quot;0&quot;}}},&quot;ParameterDirection&quot;:&quot;1&quot;}]}}" />
+              <Property Id="777011" Type="String" Value="{Degree=(Update)}" />
+              <Property Id="777012" Type="String" Value="root.ValueOut =  me.AP2( root.ValueIn);" />
+            </Properties>
+            <Items />
+          </Item>
+          <Item Name="ValueOut" Type="Bool" Id="105">
+            <Properties />
+            <Items />
+          </Item>
+        </Items>
+      </Item>
+      <Item Name="Service" Type="Folder" Id="2147483647">
+        <Properties />
+        <Items>
+          <Item Name="State" Type="Folder" Id="2147483650">
+            <Properties />
+            <Items>
+              <Item Name="Server" Type="Bool" Id="2147483673">
+                <Properties />
+                <Items>
+                  <Item Name="Set" Type="Bool" Id="2147483675" Value="True" Quality="192">
+                    <Properties />
+                    <Items />
+                  </Item>
+                </Items>
+              </Item>
+              <Item Name="Pair" Type="Bool" Id="2147483674">
+                <Properties />
+                <Items>
+                  <Item Name="Set" Type="Bool" Id="2147483676" Value="True" Quality="192">
+                    <Properties />
+                    <Items />
+                  </Item>
+                </Items>
+              </Item>
+            </Items>
+          </Item>
+        </Items>
+      </Item>
+    </Items>
+  </Signals>
+  <Modules>
+    <Properties />
+    <Items>
+      <Item Name="9c49ade1-5e41-4066-bd74-e7add029ac99" Type="Folder">
+        <Properties>
+          <Property Id="999000" Type="String" Value="OpcDaServerModuleConfigNode" />
+        </Properties>
+        <Items>
+          <Item Name="MaxNotifyQueueSize" Type="UInt4" Value="500000">
+            <Properties />
+            <Items />
+          </Item>
+          <Item Name="ModuleName" Type="String" Value="OpcDaServer">
+            <Properties />
+            <Items />
+          </Item>
+          <Item Name="ModuleId" Type="String" Value="OpcDaServer">
+            <Properties />
+            <Items />
+          </Item>
+          <Item Name="ModuleLibrary" Type="String" Value="OPCDAServer_Module.dll">
+            <Properties />
+            <Items />
+          </Item>
+          <Item Name="Priority" Type="UInt4" Value="100">
+            <Properties />
+            <Items />
+          </Item>
+          <Item Name="Active" Type="Bool" Value="True">
+            <Properties />
+            <Items />
+          </Item>
+          <Item Name="EventLogLevel" Type="UInt4" Value="2">
+            <Properties />
+            <Items />
+          </Item>
+          <Item Name="ModuleLogActive" Type="Bool" Value="False">
+            <Properties />
+            <Items />
+          </Item>
+          <Item Name="ModuleLogSize" Type="UInt4" Value="10">
+            <Properties />
+            <Items />
+          </Item>
+          <Item Name="ModuleExtraLogFilesCount" Type="UInt1" Value="1">
+            <Properties />
+            <Items />
+          </Item>
+        </Items>
+      </Item>
+      <Item Name="28c68bfb-1e1b-4b7c-bbda-44bb6919b6c5" Type="Folder">
+        <Properties>
+          <Property Id="999000" Type="String" Value="LogicsModuleConfigNode" />
+        </Properties>
+        <Items>
+          <Item Name="WorkMode" Type="UInt1" Value="0">
+            <Properties />
+            <Items />
+          </Item>
+          <Item Name="UnitPool" Type="System.Object" Value="AAEAAAD/////AQAAAAAAAAAPAQAAAH8AAAACoAABAAAAcVH6oQAAGAAQBABWKFYpECQAQUI1NjU0NjMtRDI4Ni00NzMzLTgzQUItMzQ2NzU1NjY5QUFCEAwARnVuY3Rpb25OYW1lEAAIAAEAEAAIAAAAAQAKABwAAAAAAAIAAAAABCgAAA0AAABLAACuAQAFAQVMAgADAAAAAAs=">
+            <Properties />
+            <Items />
+          </Item>
+          <Item Name="ImplicitIntegerToBoolConvertion" Type="Bool" Value="False">
+            <Properties />
+            <Items />
+          </Item>
+          <Item Name="SourceCodeCaseSensitive" Type="Bool" Value="True">
+            <Properties />
+            <Items />
+          </Item>
+          <Item Name="IgnoreDeclarationAssignTypeCheck" Type="Bool" Value="False">
+            <Properties />
+            <Items />
+          </Item>
+          <Item Name="ModuleName" Type="String" Value="LogicsModule">
+            <Properties />
+            <Items />
+          </Item>
+          <Item Name="ModuleId" Type="String" Value="LogicsModule">
+            <Properties />
+            <Items />
+          </Item>
+          <Item Name="ModuleLibrary" Type="String" Value="Logics_Module.dll">
+            <Properties />
+            <Items />
+          </Item>
+          <Item Name="Priority" Type="UInt4" Value="1">
+            <Properties />
+            <Items />
+          </Item>
+          <Item Name="Active" Type="Bool" Value="True">
+            <Properties />
+            <Items />
+          </Item>
+          <Item Name="EventLogLevel" Type="UInt4" Value="2">
+            <Properties />
+            <Items />
+          </Item>
+          <Item Name="ModuleLogActive" Type="Bool" Value="False">
+            <Properties />
+            <Items />
+          </Item>
+          <Item Name="ModuleLogSize" Type="UInt4" Value="10">
+            <Properties />
+            <Items />
+          </Item>
+          <Item Name="ModuleExtraLogFilesCount" Type="UInt1" Value="1">
+            <Properties />
+            <Items />
+          </Item>
+        </Items>
+      </Item>
+    </Items>
+  </Modules>
+</Configuration>

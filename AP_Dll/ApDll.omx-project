@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Id="66fb2ef3-b7b5-44c1-92ab-649622f857f5" Version="1.0.0.13" OutputPath="bin\" UpgradeVersion="4">
+  <Files>
+    <SourceFile Name="ApDll.omx" />
+  </Files>
+</Project>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<BuildProductsInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Environments>
+    <Environment Name="локальная" Version="1.0.0.13">
+      <Products>
+        <Product Domain="Domain" Runtime="Domain.ARM.AlphaServer">
+          <FilePath>bin\локальная\Domain\ARM\AlphaServer\alpha.server.cfg</FilePath>
+        </Product>
+      </Products>
+    </Environment>
+  </Environments>
+</BuildProductsInfo>

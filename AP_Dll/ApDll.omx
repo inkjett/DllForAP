@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<alpha-omx migration="11">
+  <domain name="Domain" uuid="d822804a-a548-437f-bada-7cab859cb457" address="Main_ARM">
+    <domain-node name="ARM" uuid="1f02798a-7c6c-4fdc-b7c0-f6542d81e89b">
+      <alphaserver name="AlphaServer" uuid="55f9b64a-80ee-4cb8-9033-364c4df0dc02">
+        <application-object name="AppArm" uuid="ba93f2bc-0b65-4447-81e3-13444740f6c5">
+          <object name="root" uuid="55439423-d419-4ddf-94aa-f49d631d6c3a">
+            <parameter name="ValueIn" uuid="bf338764-6e17-4d2e-8107-d298a090933c" type="bool">
+              <attribute type="unit.AlphaServer.Attributes.InitialValue" value="true" />
+              <attribute type="unit.AlphaServer.Attributes.InitialQuality" value="216" />
+            </parameter>
+            <parameter name="ValueOut" uuid="3ff38ede-a7cc-4108-a08d-162051d98ef8" type="bool" />
+            <external-function name="ExternalFunction" uuid="605f57fb-8037-464d-a51d-468d7733021c" filename="Dll1.dll" function="AP" return-type="Bool" convention="StdCall" charset="Utf8">
+              <function-parameter name="p1" type="Bool" direction="In" />
+            </external-function>
+            <handler name="On_ValueIn" uuid="ac459152-7187-4db8-8a89-6073c5a74055" source-code="ValueOut = ExternalFunction(ValueIn);">
+              <trigger on="ValueIn" />
+            </handler>
+          </object>
+        </application-object>
+        <alphaserver-opcda-server name="OpcDaServer" uuid="9c49ade1-5e41-4066-bd74-e7add029ac99" />
+        <alphaserver-logics-module name="LogicsModule" uuid="28c68bfb-1e1b-4b7c-bbda-44bb6919b6c5" />
+      </alphaserver>
+    </domain-node>
+  </domain>
+  <link-unit name="System" uuid="4502af7e-12aa-40c8-a2c1-f48c32027569" target="Om.System" />
+  <link-unit name="AlphaServer" uuid="2930dc90-3c5f-4e04-bc58-a1d19f5f07cf" target="AlphaServer.Om" />
+</alpha-omx>

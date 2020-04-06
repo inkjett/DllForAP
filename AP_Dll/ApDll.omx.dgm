@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Diagrams>
+  <RootNamespace Id="66fb2ef3-b7b5-44c1-92ab-649622f857f5" OffsetX="0" OffsetY="0" Scale="1">
+    <Domain Id="Domain" Left="40" Top="40" Width="103.58333333333334" Height="41" />
+    <UnitLink Id="System" Left="184.58333333333334" Top="40" Width="152.46333333333334" Height="38.63" />
+    <UnitLink Id="AlphaServer" Left="378.04666666666668" Top="40" Width="175.99333333333334" Height="38.63" />
+  </RootNamespace>
+  <Domain Id="d822804a-a548-437f-bada-7cab859cb457" OffsetX="0" OffsetY="0" Scale="1">
+    <DomainNode Id="Domain.ARM" Left="538" Top="163.99196910858154" Width="309.93333333333334" Height="188" />
+  </Domain>
+  <DomainNode Id="1f02798a-7c6c-4fdc-b7c0-f6542d81e89b" OffsetX="0" OffsetY="0" Scale="1">
+    <Server Id="Domain.ARM.AlphaServer" Left="257" Top="142.99196910858154" Width="222.02" Height="106" />
+  </DomainNode>
+  <Server Id="55f9b64a-80ee-4cb8-9033-364c4df0dc02" OffsetX="0" OffsetY="0" Scale="1">
+    <ApplicationObject Id="Domain.ARM.AlphaServer.AppArm" Left="250.80666666666662" Top="26" Width="146.99666666666667" Height="32" />
+    <OpcDaServer Id="Domain.ARM.AlphaServer.OpcDaServer" Left="1121.8166666666666" Top="26" Width="131.18333333333334" Height="36.63" />
+    <LogicsModule Id="Domain.ARM.AlphaServer.LogicsModule" Left="760.80666666666662" Top="96.991969108581543" Width="134.01" Height="38.63" />
+  </Server>
+  <ApplicationObject Id="ba93f2bc-0b65-4447-81e3-13444740f6c5" OffsetX="0" OffsetY="0" Scale="1">
+    <Object Id="Domain.ARM.AlphaServer.AppArm.root" Left="489" Top="26" Width="86.893333333333345" Height="32" />
+  </ApplicationObject>
+  <Object Id="55439423-d419-4ddf-94aa-f49d631d6c3a" OffsetX="0" OffsetY="0" Scale="1">
+    <Parameter Id="Domain.ARM.AlphaServer.AppArm.root.ValueIn" Left="1125.7633333333333" Top="26" Width="131.23666666666668" Height="22" />
+    <Parameter Id="Domain.ARM.AlphaServer.AppArm.root.ValueOut" Left="1125.7633333333333" Top="95.991969108581543" Width="131.23666666666668" Height="22" />
+    <ExternalFunction Id="Domain.ARM.AlphaServer.AppArm.root.ExternalFunction" Left="500.08999999999992" Top="26" Width="198.67333333333335" Height="242" />
+    <Handler Id="Domain.ARM.AlphaServer.AppArm.root.On_ValueIn" Left="66" Top="34" Width="138.33333333333334" Height="24" />
+  </Object>
+</Diagrams>
